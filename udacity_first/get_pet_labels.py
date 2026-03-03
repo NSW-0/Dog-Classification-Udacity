@@ -52,7 +52,7 @@ def get_pet_labels(image_dir):
         if in_files[idx][0] != ".":
             pet_label = ""
             # Extracting the pet label from the filename, split by _, lowercase and strip whitespace
-            pet_label = "_".join(in_files[idx].split("_")[:-1]).lower().strip()
+            pet_label = " ".join(in_files[idx].split("_")[:-1]).lower().strip()
             # filename doesn't already exist in dictionary
             if in_files[idx] not in results_dic:
                 results_dic[in_files[idx]] = [pet_label]
