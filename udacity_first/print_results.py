@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # */AIPND-revision/intropyproject-classify-pet-images/print_results.py
-#                                                                             
+#
 # PROGRAMMER: Nabeel Sawafta
 # DATE CREATED: 03/02/2026
 # REVISED DATE:
@@ -62,30 +62,29 @@ def print_results(results_dic, results_stats_dic, model,
     Returns:
            None - simply printing results.
     """
-    print("\n\n*** Results Summary for CNN Model Architecture", model.upper(),
-          "***")
+    # Display model and image statistics
+    print("\n\n*** Results Summary for CNN Model Architecture", model.upper(), "***")
     print("{:20}: {:3d}".format('N Images', results_stats_dic['n_images']))
     print("{:20}: {:3d}".format('N Dog Images', results_stats_dic['n_dogs_img']))
     print("{:20}: {:3d}".format('N Not-Dog Images', results_stats_dic['n_notdogs_img']))
 
-    # Printing Precentages
-    print("\nPrecentages:")
+    # Printing Percentages
+    print("\nPercentages:")
     for key in results_stats_dic:
         if key.startswith("pct"):
             print("{:20}: {:.2f}%".format(key, results_stats_dic[key]))
 
-    # Pet label is a dog and classifier label is not a dog or vise versa
+    # Incorrect Dog/Not Dog Assignments
     if print_incorrect_dogs:
         print("\nINCORRECT Dog/NOT Dog Assignments:")
         for key in results_dic:
             if results_dic[key][2] == 0:
                 print("Real: {:>26}   Classifier: {:>30}".format(results_dic[key][0], results_dic[key][1]))
 
-    # Pet label is a dog, classified as a dog, but is the wrong breed
+    # Incorrect Dog Breed Assignments
     if print_incorrect_breed:
         print("\nINCORRECT Dog Breed Assignment:")
         for key in results_dic:
-
             if results_dic[key][3] == 1 and results_dic[key][2] == 0:
                 print("Real: {:>26}   Classifier: {:>30}".format(results_dic[key][0], results_dic[key][1]))
 

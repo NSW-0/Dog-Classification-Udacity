@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # */AIPND-revision/intropyproject-classify-pet-images/calculates_results_stats.py
-#                                                                             
+#
 # PROGRAMMER: Nabeel Sawafta
-# DATE CREATED: 03/02/2026                                  
-# REVISED DATE: 
-# PURPOSE: Create a function calculates_results_stats that calculates the 
+# DATE CREATED: 03/02/2026
+# REVISED DATE:
+# PURPOSE: Create a function calculates_results_stats that calculates the
 #          statistics of the results of the programrun using the classifier's model
 #          architecture to classify the images. This function will use the
 #          results in the results dictionary to calculate these statistics.
