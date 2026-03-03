@@ -43,7 +43,7 @@ def get_input_args():
 
     # Adding items to parser
     parser.add_argument('--dir', type=str, default='pet_images/', help='path to folder of images')
-    parser.add_argument('--arch', default='alexnet', help='CNN model architecture')
+    parser.add_argument('--arch', default='vgg', help='CNN model architecture')
     parser.add_argument('--dogfile', default='dognames.txt', help='text file of names of the dog breeds')
 
     # Returning the parser
