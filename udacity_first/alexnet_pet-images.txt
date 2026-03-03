@@ -310,7 +310,7 @@ PetLabelDog: 1  ClassLabelDog: 1
 
  ** Statistics from calculates_results_stats() function:
 N Images: 40  N Dog Images: 30  N NotDog Images: 10 
-Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed: 100.0
+Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed:  80.0
 
  ** Check Statistics - calculated from this function as a check:
 N Images: 40  N Dog Images: 30  N NotDog Images: 10 
@@ -323,10 +323,10 @@ N Dog Images        :  30
 N Not-Dog Images    :  10
 
 Percentages:
-pct_match           : 75.00%
+pct_match           : 100.00%
 pct_correct_dogs    : 100.00%
-pct_correct_breed   : 100.00%
 pct_correct_notdogs : 100.00%
+pct_correct_breed   : 80.00%
 
 INCORRECT Dog/NOT Dog Assignments:
 Real:                     beagle   Classifier:               english foxhound
@@ -348,4 +348,4 @@ Real:           golden retriever   Classifier:                tibetan mastiff
 Real:           golden retriever   Classifier:           afghan hound, afghan
 Real:             great pyrenees   Classifier:                         kuvasz
 
-** Total Elapsed Runtime:  0:0:1
+** Total Elapsed Runtime:  0:0:0
